@@ -17,7 +17,7 @@
 .logo {
   max-height: 45vh;
   margin-left: -6vh;
-  margin-bottom: 4rem;
+  margin-bottom: 3vh;
 }
 
 .home {
