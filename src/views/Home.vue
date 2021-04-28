@@ -1,13 +1,13 @@
 <template>
   <article class="home">
     <img class="logo" alt="Mucho logo" src="../assets/logo.svg">
-    <p>Para Mayo lo sacamos. Prometido.🤞
-    <br/>Si quieres que te avisemos, <strong>apunta tu email:</strong></p>
+    <p style="text-align: left;">Para Mayo lo sacamos. Prometido.🤞
+    <br/>Si quieres que te avisemos, <strong>déjanos un email:</strong></p>
     <form name="contact" method="POST" data-netlify="true"
       data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact">
-      <input type="email" name="email" placeholder="micorreo@ejemplo.com" />
-      <label>Mensaje (opcional): <textarea name="message" placeholder="Mi mensaje"></textarea></label>
+      <input type="email" name="email" placeholder="micorreo@ejemplo.com" required/>
+      <textarea name="message" placeholder="Mi mensaje (opcional)"></textarea>
       <button type="submit">Avísame</button>
     </form>
   </article>
@@ -16,6 +16,8 @@
 <style lang="scss">
 .logo {
   max-height: 45vh;
+  margin-left: -6vh;
+  margin-bottom: 4rem;
 }
 
 .home {
@@ -65,6 +67,7 @@ textarea {
   padding: 1rem;
   border: none;
   color: white;
+  font-family: Helvetica, sans-serif;
   -webkit-appearance: none;
   background: rgba(black, 0.1);
   border-bottom: 2px white solid;

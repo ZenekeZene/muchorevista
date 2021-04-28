@@ -11,7 +11,9 @@ html, body, #app {
 
 body {
   background-color: #1e1e1c;
+  font-family: Helvetica, sans-serif;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
