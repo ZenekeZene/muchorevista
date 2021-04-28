@@ -1,12 +1,7 @@
 <template>
-  <div id="app">
+  <main id="app">
     <router-view/>
-    <p>Se que tienes ganas.
-    <br/>Nosotros también.
-    <br/>Para Mayo lo sacamos.
-    <br/>Prometido.🤞
-    </p>
-  </div>
+  </main>
 </template>
 
 <style lang="scss">
