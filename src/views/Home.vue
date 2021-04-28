@@ -1,22 +1,64 @@
 <template>
   <article class="home">
     <img class="logo" alt="Mucho logo" src="../assets/logo.svg">
-    <p>Se que tienes ganas.
-      <br/>Nosotros también.
-      <br/>Para Mayo lo sacamos.
-      <br/>Prometido.🤞
-    </p>
+    <p>Para Mayo lo sacamos. Prometido.🤞
+    <br/>Si quieres que te avisemos, <strong>apunta tu email:</strong></p>
     <form name="contact" method="POST" netlify>
-      <label>Your Email: <input type="email" name="email" /></label>
-      <label>Message: <textarea name="message"></textarea></label>
-      <button type="submit">Send</button>
+      <input type="email" name="email" placeholder="micorreo@ejemplo.com" />
+      <label>Mensaje (opcional): <textarea name="message" placeholder="Mi mensaje"></textarea></label>
+      <button type="submit">Avísame</button>
+      <input type="hidden" name="form-name" value="contact">
     </form>
   </article>
 </template>
 
 <style lang="scss">
 .logo {
-  max-height: 75vh;
-  margin-left: -10vw;
+  max-height: 45vh;
 }
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 23rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background: #e6ad40;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: none;
+  -webkit-appearance: none;
+  background: rgba(black, 0.1);
+  border-bottom: 2px white solid;
+}
+
 </style>

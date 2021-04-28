@@ -5,6 +5,10 @@
 </template>
 
 <style lang="scss">
+html, body, #app {
+  height: 100%;
+}
+
 body {
   background-color: #1e1e1c;
 }
