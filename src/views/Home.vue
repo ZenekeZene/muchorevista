@@ -3,11 +3,12 @@
     <img class="logo" alt="Mucho logo" src="../assets/logo.svg">
     <p>Para Mayo lo sacamos. Prometido.🤞
     <br/>Si quieres que te avisemos, <strong>apunta tu email:</strong></p>
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" method="POST" data-netlify="true"
+      data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
       <input type="email" name="email" placeholder="micorreo@ejemplo.com" />
       <label>Mensaje (opcional): <textarea name="message" placeholder="Mi mensaje"></textarea></label>
       <button type="submit">Avísame</button>
-      <input type="hidden" name="form-name" value="contact">
     </form>
   </article>
 </template>

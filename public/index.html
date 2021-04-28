@@ -11,11 +11,10 @@
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <form name="contact" method="POST" data-netlify="true" hidden>
+    <form name="contact" method="POST" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact">
       <input type="email" name="email" placeholder="micorreo@ejemplo.com" />
       <label>Mensaje (opcional): <textarea name="message" placeholder="Mi mensaje"></textarea></label>
-      <button type="submit">Avísame</button>
-      <input type="hidden" name="form-name" value="contact">
     </form>
     <div id="app"></div>
     <!-- built files will be auto injected -->
