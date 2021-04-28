@@ -56,6 +56,7 @@ textarea {
   margin: 1rem auto;
   padding: 1rem;
   border: none;
+  color: white;
   -webkit-appearance: none;
   background: rgba(black, 0.1);
   border-bottom: 2px white solid;
