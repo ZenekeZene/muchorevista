@@ -16,13 +16,15 @@
 
 <style lang="scss">
 .logo {
-  max-height: 45vh;
+  max-height: 42vh;
   margin-left: -6vh;
   margin-bottom: 3vh;
 }
 
 a {
   color: #a2a2a2;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
 }
 
 .home {
