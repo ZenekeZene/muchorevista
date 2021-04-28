@@ -10,6 +10,7 @@
       <textarea name="message" placeholder="Mi mensaje (opcional)"></textarea>
       <button type="submit">Avísame</button>
     </form>
+    <a href="mailto:info@revistamucho.com">info@revistamucho.com</a>
   </article>
 </template>
 
@@ -18,6 +19,10 @@
   max-height: 45vh;
   margin-left: -6vh;
   margin-bottom: 3vh;
+}
+
+a {
+  color: #a2a2a2;
 }
 
 .home {
@@ -43,6 +48,7 @@ label {
 
 button {
   width: 100%;
+  margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 5px;
   border: none;
