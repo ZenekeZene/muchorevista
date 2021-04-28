@@ -47,6 +47,13 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    color: #e6ad40;
+    background: black;
+  }
 }
 
 input[type="email"],
