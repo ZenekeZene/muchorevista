@@ -10,18 +10,22 @@
       data-netlify-honeypot="bot-field"
       @submit.prevent="handleSubmit"
     >
-      <input type="hidden" name="form-name" value="contact">
+      <input
+        type="hidden"
+        name="form-name"
+        value="contact"
+      />
       <input
         type="email"
         name="email"
-        v-model="form.email"
         placeholder="micorreo@ejemplo.com"
         required
+        @input="ev => form.email = ev.target.value"
       />
       <textarea
         name="message"
         placeholder="Mi mensaje (opcional)"
-        v-model="form.message"
+        @input="ev => form.message = ev.target.value"
       ></textarea>
       <button type="submit">Avísame</button>
     </form>
@@ -29,7 +33,6 @@
   </article>
 </template>
 <script>
-import axios from 'axios'
 
 export default {
   data () {
@@ -49,17 +52,15 @@ export default {
         .join("&");
     },
     handleSubmit () {
-      const axiosConfig = {
-        header: { "Content-Type": "application/x-www-form-urlencoded" }
-      };
-      axios.post(
-        "/",
-        this.encode({
-          "form-name": "contact",
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encode({
+          "form-name": "ask-question",
           ...this.form
-        }),
-        axiosConfig
-      ).then(() => {
+        })
+      })
+      .then(() => {
         this.$router.push('thanks')
       })
       .catch(() => {
