@@ -22,7 +22,7 @@
         placeholder="Mi mensaje (opcional)"
         v-model="form.message"
       ></textarea>
-      <button type="submit">Avísame</button>
+      <button>Avísame</button>
     </form>
     <a href="mailto:info@revistamucho.com">info@revistamucho.com</a>
   </article>
