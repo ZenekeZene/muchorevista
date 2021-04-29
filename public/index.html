@@ -17,10 +17,16 @@
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <form name="contact" method="POST" netlify netlify-honeypot="bot-field" hidden>
+    <form
+      name="contact"
+      method="POST"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+      data-netlify-subject="Cuando sacáis la revista"
+    >
       <input type="hidden" name="form-name" value="contact">
       <input type="email" name="email" placeholder="micorreo@ejemplo.com" />
-      <input name="subject" value="¡Cuando sacais la revista!" />
       <textarea name="message" placeholder="Mi mensaje"></textarea>
     </form>
     <div id="app"></div>

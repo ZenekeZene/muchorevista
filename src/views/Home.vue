@@ -8,6 +8,7 @@
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      data-netlify-subject="Cuando sacáis la revista"
       @submit.prevent="handleSubmit"
     >
       <input
@@ -27,7 +28,6 @@
         placeholder="Mi mensaje (opcional)"
         @input="ev => form.message = ev.target.value"
       ></textarea>
-      <input hidden name="subject" value="¡Cuando sacais la revista!" />
       <button type="submit">Avísame</button>
     </form>
     <a href="mailto:info@revistamucho.com">info@revistamucho.com</a>
