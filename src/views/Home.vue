@@ -58,7 +58,12 @@ export default {
           ...this.form
         }),
         axiosConfig
-      );
+      ).then(() => {
+        this.$router.push('thanks')
+      })
+      .catch(() => {
+        this.$router.push('404')
+      })
     }
   }
 }
@@ -77,13 +82,7 @@ a {
 }
 
 .home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 23rem;
   height: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
 }
 
 form {
@@ -98,6 +97,7 @@ label {
 }
 
 button {
+  max-width: 23rem;
   width: 100%;
   margin-bottom: 1rem;
   padding: 1rem;

@@ -20,6 +20,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
+  max-width: 23rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #nav {
