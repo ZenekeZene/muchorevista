@@ -5,7 +5,7 @@
     <br/>Si quieres que te avisemos, <strong>déjanos un email:</strong></p>
     <form
       name="contact"
-      method="POST"
+      method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       @submit.prevent="handleSubmit"
@@ -15,14 +15,15 @@
         type="email"
         name="email"
         v-model="form.email"
-        placeholder="micorreo@ejemplo.com" required
+        placeholder="micorreo@ejemplo.com"
+        required
       />
       <textarea
         name="message"
         placeholder="Mi mensaje (opcional)"
         v-model="form.message"
       ></textarea>
-      <button>Avísame</button>
+      <button type="submit">Avísame</button>
     </form>
     <a href="mailto:info@revistamucho.com">info@revistamucho.com</a>
   </article>
