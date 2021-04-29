@@ -8,7 +8,6 @@
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      data-netlify-subject="Cuando sacáis la revista"
       @submit.prevent="handleSubmit"
     >
       <input
@@ -58,6 +57,7 @@ export default {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: this.encode({
           "form-name": "contact",
+          "subject": "¿Cuándo lo sacáis?",
           ...this.form
         })
       })
