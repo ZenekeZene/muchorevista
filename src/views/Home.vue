@@ -8,6 +8,7 @@
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      subject="Aviso de disponibilidad"
       @submit.prevent="handleSubmit"
     >
       <input
@@ -70,7 +71,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .logo {
   max-height: 42vh;
   margin-left: -6vh;
@@ -84,52 +85,9 @@ a {
 }
 
 .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
 }
-
-form {
-  width: 100%;
-  margin: 0 auto;
-}
-
-label {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-button {
-  max-width: 23rem;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-radius: 5px;
-  border: none;
-  background: #e6ad40;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: all 150ms ease-in-out;
-
-  &:hover {
-    color: #e6ad40;
-    background: black;
-  }
-}
-
-input[type="email"],
-textarea {
-  width: 100%;
-  display: block;
-  margin: 1rem auto;
-  padding: 1rem;
-  border: none;
-  color: white;
-  font-family: Helvetica, sans-serif;
-  -webkit-appearance: none;
-  background: rgba(black, 0.1);
-  border-bottom: 2px white solid;
-}
-
 </style>
