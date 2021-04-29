@@ -8,7 +8,6 @@
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      subject="Aviso de disponibilidad"
       @submit.prevent="handleSubmit"
     >
       <input
