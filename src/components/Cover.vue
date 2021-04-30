@@ -1,8 +1,15 @@
 <template>
   <article class="cover">
     <img src="/img/cover.png" alt="Mockup de la revista" />
+    <div class="flip-book-container solid-container" src="/Mucho.pdf"></div>
   </article>
 </template>
+<script>
+
+export default {
+  created () {}
+}
+</script>
 <style scoped lang="scss">
 .cover {
   display: flex;

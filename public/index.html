@@ -12,6 +12,11 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Mucho</title>
+    <style type="text/css">
+      .solid-container {
+        height: 100vh;
+      }
+    </style>
   </head>
   <body>
     <noscript>
@@ -31,5 +36,14 @@
     </form>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <div class="flip-book-container solid-container" src="./Mucho.pdf">
+
+    </div>
+    <script src="node_modules/3d-flip-book/js/jquery.min.js"></script>
+    <script src="node_modules/3d-flip-book/js/html2canvas.min.js"></script>
+    <script src="node_modules/3d-flip-book/js/three.min.js"></script>
+    <script src="node_modules/3d-flip-book/js/pdf.min.js"></script>
+
+    <script src="node_modules/3d-flip-book/js/3dflipbook.min.js"></script>
   </body>
 </html>
