@@ -1,8 +1,6 @@
 <template>
   <main id="app">
-    <transition name="fade" mode="in-out">
-      <router-view class="view" />
-    </transition>
+    <router-view class="view" />
     <Cover />
   </main>
 </template>
@@ -26,6 +24,16 @@ export default {
     grid-template-columns: 100%;
     grid-template-rows: 100%;
   }
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 27rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .fade-enter-active {

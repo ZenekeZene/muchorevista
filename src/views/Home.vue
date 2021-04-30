@@ -72,16 +72,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  padding: 2rem;
-  max-width: 27rem;
-  margin: 0 auto;
-}
-
 .logo {
   max-height: 35vh;
   margin-left: -6vh;
