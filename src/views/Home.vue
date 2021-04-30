@@ -1,8 +1,8 @@
 <template>
   <article class="home">
     <img class="logo" alt="Mucho logo" src="../assets/logo.svg">
-    <p style="text-align: left;">Para Mayo lo sacamos. Prometido.🤞
-    <br/>Si quieres que te avisemos, <strong>déjanos un email:</strong></p>
+    <p>Somos una revista nueva sobre hip hop, cine, cómic y macarradas varias.
+    Para Mayo la sacamos. Prometido.🤞 Si quieres que te avisemos cuando la tengamos lista, <strong>déjanos un email</strong> y te lo haremos saber:</p>
     <form
       name="contact"
       method="post"
@@ -72,8 +72,18 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+  max-width: 27rem;
+  margin: 0 auto;
+}
+
 .logo {
-  max-height: 42vh;
+  max-height: 35vh;
   margin-left: -6vh;
   margin-bottom: 3vh;
 }
@@ -84,10 +94,7 @@ a {
   margin-bottom: 1rem;
 }
 
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
+p {
+  text-align: left;
 }
 </style>

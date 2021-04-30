@@ -3,25 +3,29 @@
     <transition name="fade" mode="in-out">
       <router-view class="view" />
     </transition>
+    <Cover />
   </main>
 </template>
+<script>
+import Cover from './components/Cover.vue'
 
+export default {
+  components: { Cover }
+}
+</script>
 <style lang="scss" scoped>
 #app {
   position: relative;
-  max-width: 23rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
   height: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
   text-align: center;
-}
 
-.view {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 100%;
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
 }
 
 .fade-enter-active {
