@@ -6,7 +6,7 @@ webhook_url:
 sections: 
 upload_dir: uploads
 public_path: "/uploads"
-front_matter_path: ''
+front_matter_path: "/media"
 use_front_matter_path: true
 file_template: ":filename:"
 build:
