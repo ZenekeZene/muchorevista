@@ -9,7 +9,7 @@ sections:
   label: Directorios
   create: all
   match: "**/*"
-upload_dir: ''
+upload_dir: uploads
 public_path: "/media"
 front_matter_path: "/media"
 use_front_matter_path: false
