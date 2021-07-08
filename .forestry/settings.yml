@@ -9,10 +9,10 @@ sections:
   label: Directorios
   create: all
   match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: ''
+public_path: "/media"
 front_matter_path: "/media"
-use_front_matter_path: true
+use_front_matter_path: false
 file_template: ":filename:"
 build:
   install_dependencies_command: npm install
